@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\winformsapp2\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\winformsapp2\\sign in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\sign in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\downloads\\qlgh-main\\qlgh-main\\winformsapp2\\winformsapp2\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\downloads\\qlgh-main\\qlgh-main\\winformsapp2\\winformsapp2\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\downloads\\qlgh-main\\qlgh-main\\winformsapp2\\winformsapp2\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\MainMenu.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\MainMenu.cs",
+              "ToolTip": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\MainMenu.cs",
+              "RelativeToolTip": "WinFormsApp2\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T09:00:04.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Data.cs",
+              "DocumentMoniker": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\Data.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\Data.cs",
+              "ToolTip": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\Data.cs",
+              "RelativeToolTip": "WinFormsApp2\\Data.cs",
+              "ViewState": "AgIAADMBAAAAAAAAAAAswD4BAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T15:43:35.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Data.cs [Design]",
+              "DocumentMoniker": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\Data.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\Data.cs",
+              "ToolTip": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\Data.cs [Design]",
+              "RelativeToolTip": "WinFormsApp2\\Data.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T11:56:50.998Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sign in.cs [Design]",
+              "DocumentMoniker": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\Sign in.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\Sign in.cs",
+              "ToolTip": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\Sign in.cs [Design]",
+              "RelativeToolTip": "WinFormsApp2\\Sign in.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T12:42:00.847Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainMenu.cs [Design]",
+              "DocumentMoniker": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\MainMenu.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\MainMenu.cs",
+              "ToolTip": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\MainMenu.cs [Design]",
+              "RelativeToolTip": "WinFormsApp2\\MainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T13:05:57.533Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
