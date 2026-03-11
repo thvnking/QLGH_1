@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj": {}
+    "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj": {}
   },
   "projects": {
-    "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj": {
+    "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
+        "projectUniqueName": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
         "projectName": "WinFormsApp2",
-        "projectPath": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\downloads\\QLGH-main\\QLGH-main\\WinFormsApp2\\WinFormsApp2\\obj\\",
+        "projectPath": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
+        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,7 +94,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

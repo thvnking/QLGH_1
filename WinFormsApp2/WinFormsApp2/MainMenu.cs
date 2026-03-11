@@ -28,21 +28,6 @@ namespace WinFormsApp2
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelHeader_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonTC_Click(object sender, EventArgs e)
         {
             if (activeForm != null)
@@ -50,79 +35,42 @@ namespace WinFormsApp2
                 activeForm.Close();
                 activeForm = null;
             }
-            labelTitle.Text = "TRANG CHỦ";
         }
-        private void buttonDH_Click(object sender, EventArgs e)
+        private void buttonHS_Click(object sender, EventArgs e)
         {
             Form1 frm = new Form1();
             openChildForm(frm);
-            frm.LoadData("SELECT * FROM DonHang");
-            labelTitle.Text = "QUẢN LÝ ĐƠN HÀNG";
+            frm.LoadData("SELECT * FROM contracts");
         }
         private void buttonKH_Click(object sender, EventArgs e)
         {
             Form1 frm = new Form1();
             openChildForm(frm);
-            frm.SetFilterVisible(false);
-            frm.ChiTietVisible(false);
-            frm.LoadData("SELECT * FROM KhachHang");
-            labelTitle.Text = "QUẢN LÝ KHÁCH HÀNG";
+            frm.LoadData("SELECT * FROM clients");
         }
-        private void buttonNV_Click(object sender, EventArgs e)
+        private void buttonLS_Click(object sender, EventArgs e)
         {
             Form1 frm = new Form1();
             openChildForm(frm);
-            frm.SetFilterVisible(false);
-            frm.ChiTietVisible(false);
-            frm.LoadData("SELECT * FROM NhanVien");
-            labelTitle.Text = "QUẢN LÝ NHÂN VIÊN";
+            frm.LoadData("SELECT * FROM lawyers");
         }
         private void buttonDX_Click_1(object sender, EventArgs e)
         {
             Sign_in login = new Sign_in();
             login.Show();
-
             this.Close();
         }
-
-        private void buttonSquare_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else if (this.WindowState == FormWindowState.Maximized)
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-        }
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-        private void buttonMi_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
         private void buttonPG_Click(object sender, EventArgs e)
         {
             Form1 frm = new Form1();
             openChildForm(frm);
-            frm.SetFilterVisible(false);
-            frm.ChiTietVisible(false);
             frm.LoadData("SELECT * FROM ChiTietHang");
-            labelTitle.Text = "QUẢN LÝ Chi Tiết Hàng";
         }
-
-        private void buttonDC_Click(object sender, EventArgs e)
+        private void buttonTK_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
+            DataView frm = new DataView();
             openChildForm(frm);
-            frm.SetFilterVisible(false);
-            frm.ChiTietVisible(false);
-            frm.LoadData("SELECT * FROM DiaChi");
-            labelTitle.Text = "QUẢN LÝ Địa Chỉ";
+            frm.LoadData("SELECT * FROM users");
         }
     }
 }

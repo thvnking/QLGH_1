@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using System.Linq;
-using Microsoft.Reporting.WinForms;
 
 namespace WinFormsApp2
 {
-    public partial class Form1 : Form
+    public partial class DataView : Form
     {
         private DataConnection db = new DataConnection();
         private string currentTable = "";
@@ -19,19 +18,20 @@ namespace WinFormsApp2
         private bool isEditing = false;
         private string editingPrimaryValue = "";
         private string lastUndoQuery = "";
-        private ReportViewer reportViewer1;
-
-        public Form1()
+        public DataView()
         {
             InitializeComponent();
             SetupEventHandlers();
-            SetupDatePicker();
             InitializeFilterControls();
 
             dataGridView1.DataError += (s, e) => { e.ThrowException = false; };
             dataGridView2.DataError += (s, e) => { e.ThrowException = false; };
         }
 
+        private void DataView_Load(object sender, EventArgs e)
+        {
+
+        }
         private void SetupEventHandlers()
         {
             dataGridView1.CellClick += DataGridView1_CellClick;
@@ -316,6 +316,11 @@ namespace WinFormsApp2
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }

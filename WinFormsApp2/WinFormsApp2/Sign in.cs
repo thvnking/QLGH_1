@@ -19,6 +19,7 @@ namespace WinFormsApp2
         {
             string user = textBoxUser.Text.Trim();
             string pass = textBoxPass.Text.Trim();
+
             if (string.IsNullOrEmpty(user) || string.IsNullOrEmpty(pass))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ tài khoản và mật khẩu!", "Thông báo");
@@ -28,14 +29,16 @@ namespace WinFormsApp2
             try
             {
                 string query = $@"
-                    SELECT t.TenDangNhap, n.HoTen, v.TenVaiTro 
-                    FROM TaiKhoan t
-                    JOIN NhanVien n ON t.MaNV = n.MaNV
-                    JOIN VaiTro v ON n.MaVaiTro = v.MaVaiTro
-                    WHERE t.TenDangNhap = N'{user}' AND t.MatKhau = N'{pass}'";
+        SELECT u.user_id, u.username, r.role_name
+        FROM users u
+        JOIN roles r ON u.role_id = r.role_id
+        WHERE u.username = '{user}' 
+        AND u.password_hash = '{pass}'
+        AND u.status = 1";
 
                 DataTable dt = db.GetDataTable(query);
-                if (dt != null && dt.Rows.Count > 0)
+
+                if (dt.Rows.Count > 0)
                 {
                     MainMenu main = new MainMenu();
                     main.Show();
@@ -43,12 +46,12 @@ namespace WinFormsApp2
                 }
                 else
                 {
-                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Lỗi đăng nhập");
+                    MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi hệ thống: " + ex.Message, "Lỗi kết nối");
+                MessageBox.Show("Lỗi hệ thống: " + ex.Message);
             }
         }
         private void label1_Click(object sender, EventArgs e) { }
@@ -58,7 +61,6 @@ namespace WinFormsApp2
         {
 
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -67,6 +69,9 @@ namespace WinFormsApp2
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
 }

@@ -4,6 +4,9 @@
     <Compile Update="Data.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
