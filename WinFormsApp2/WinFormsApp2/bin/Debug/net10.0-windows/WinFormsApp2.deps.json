@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "WinFormsApp2/1.0.0": {
         "dependencies": {
+          "Hourglass": "1.0.2",
           "Maikebing.System.Windows.Forms.DataVisualization": "5.0.1",
           "Microsoft.Data.SqlClient": "6.1.4",
           "Microsoft.ReportingServices.ReportViewerControl.WebForms": "150.1652.0",
@@ -41,6 +42,29 @@
           "lib/net8.0/Azure.Identity.dll": {
             "assemblyVersion": "1.17.1.0",
             "fileVersion": "1.1700.125.56903"
+          }
+        }
+      },
+      "GumroadLicensing/2.0.2": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/net45/GumroadLicensing.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Hourglass/1.0.2": {
+        "dependencies": {
+          "GumroadLicensing": "2.0.2",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/net45/Hourglass.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
           }
         }
       },
@@ -544,6 +568,14 @@
           }
         }
       },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
       "System.ClientModel/1.8.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "9.0.11",
@@ -609,6 +641,20 @@
       "sha512": "sha512-MSZkBrctcpiGxs9Cvr2VKKoN6qFLZlP3I6xuCWJ9iTgitI5Rgxtk5gfOSpXPZE3+CJmZ/mnqpQyGyjawFn5Vvg==",
       "path": "azure.identity/1.17.1",
       "hashPath": "azure.identity.1.17.1.nupkg.sha512"
+    },
+    "GumroadLicensing/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4+XDQJyqpo0RGa93ylzDUTaxl9s27np8Dfmca73W39wb3QIwvMcYCsthzsdLWrvBnuruN5c1lR5VIzwHuXm1xg==",
+      "path": "gumroadlicensing/2.0.2",
+      "hashPath": "gumroadlicensing.2.0.2.nupkg.sha512"
+    },
+    "Hourglass/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hoFdVfIORlhtEGnTGQVo9mn5NejBmKbjgCGRXR03pP3430NlbYhCVkPLr0j6ZMk5fspOo5z54rG9BoDI1aVUqQ==",
+      "path": "hourglass/1.0.2",
+      "hashPath": "hourglass.1.0.2.nupkg.sha512"
     },
     "Maikebing.System.Windows.Forms.DataVisualization/5.0.1": {
       "type": "package",
@@ -763,6 +809,13 @@
       "sha512": "sha512-gAekCmSfjtRBaiuuRIqJJV6cfEsEbYY5vI7Ssoc5sYI04JcyPrZ4C8RC3z7K9xfpr9ejQAQ1AtfvtgqEnjmwOw==",
       "path": "microsoft.sqlserver.types/14.0.314.76",
       "hashPath": "microsoft.sqlserver.types.14.0.314.76.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
     "System.ClientModel/1.8.0": {
       "type": "package",

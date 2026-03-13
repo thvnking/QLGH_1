@@ -1,0 +1,270 @@
+﻿using System;
+using System.Data;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace WinFormsApp2
+{
+    public partial class DataView : Form
+    {
+        DataConnection db = new DataConnection();
+
+        public DataView()
+        {
+            InitializeComponent();
+
+            dataGridView1.SelectionChanged += DataGridView1_SelectionChanged;
+            dataGridView1.CellClick += DataGridView1_CellClick;
+            dataGridView2.CellClick += DataGridView2_CellClick;
+        }
+
+        private void DataView_Load(object sender, EventArgs e)
+        {
+            LoadContracts();
+        }
+
+        // ================= LOAD CONTRACT =================
+
+        private void LoadContracts()
+        {
+            string sql = @"
+            SELECT 
+                c.contract_id AS MaHopDong,
+                c.contract_title AS TenHopDong,
+                cl.full_name AS TenKhachHang,
+                l.full_name AS TenLuatSu,
+                c.contract_value AS GiaTri,
+                c.start_date AS NgayBatDau,
+                c.end_date AS NgayKetThuc,
+                c.status AS TrangThai
+            FROM contracts c
+            LEFT JOIN clients cl ON c.client_id = cl.client_id
+            LEFT JOIN lawyers l ON c.lawyer_id = l.lawyer_id
+            ORDER BY c.contract_id DESC";
+
+            DataTable dt = db.GetDataTable(sql);
+
+            dataGridView1.Columns.Clear();
+            dataGridView1.DataSource = dt;
+
+            AddActionButtons();
+
+            ApplyDesign(dataGridView1);
+        }
+
+        // ================= LOAD FILE =================
+
+        private void LoadContractFiles(string contractID)
+        {
+            string sql = $@"
+            SELECT
+                file_id AS MaFile,
+                file_name AS TenFile,
+                file_path AS DuongDan,
+                uploaded_at AS NgayUpload
+            FROM contract_files
+            WHERE contract_id = {contractID}";
+
+            DataTable dt = db.GetDataTable(sql);
+
+            dataGridView2.Columns.Clear();
+            dataGridView2.DataSource = dt;
+
+            if (!dataGridView2.Columns.Contains("btnOpen"))
+            {
+                DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+                btn.Name = "btnOpen";
+                btn.HeaderText = "Open";
+                btn.Text = "Mở File";
+                btn.UseColumnTextForButtonValue = true;
+
+                dataGridView2.Columns.Add(btn);
+            }
+
+            ApplyDesign(dataGridView2);
+        }
+
+        // ================= SELECT CONTRACT =================
+
+        private void DataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null) return;
+
+            DataGridViewRow row = dataGridView1.CurrentRow;
+
+            textBoxMHD.Text = row.Cells[0].Value?.ToString();
+            textBoxTHD.Text = row.Cells[1].Value?.ToString();
+            textBoxTKH.Text = row.Cells[2].Value?.ToString();
+            textBoxTLS.Text = row.Cells[3].Value?.ToString();
+
+            string id = row.Cells[0].Value?.ToString();
+
+            if (!string.IsNullOrEmpty(id))
+                LoadContractFiles(id);
+        }
+
+        // ================= ADD CONTRACT =================
+
+        private void BtnThem_Click(object sender, EventArgs e)
+        {
+            string tenHD = textBoxTHD.Text.Trim();
+            string tenKH = textBoxTKH.Text.Trim();
+            string tenLS = textBoxTLS.Text.Trim();
+
+            if (tenHD == "")
+            {
+                MessageBox.Show("Nhập tên hợp đồng");
+                return;
+            }
+
+            string sql = $@"
+            INSERT INTO contracts(contract_title,client_id,lawyer_id,status,created_at)
+            VALUES(
+            N'{tenHD}',
+            (SELECT TOP 1 client_id FROM clients WHERE full_name=N'{tenKH}'),
+            (SELECT TOP 1 lawyer_id FROM lawyers WHERE full_name=N'{tenLS}'),
+            'active',
+            GETDATE())";
+
+            if (db.ExecuteNonQuery(sql))
+            {
+                MessageBox.Show("Thêm thành công");
+
+                LoadContracts();
+
+                textBoxTHD.Clear();
+                textBoxTKH.Clear();
+                textBoxTLS.Clear();
+            }
+        }
+
+        // ================= EDIT / DELETE =================
+
+        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            string column = dataGridView1.Columns[e.ColumnIndex].Name;
+            string id = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+            if (column == "btnDelete")
+            {
+                if (MessageBox.Show("Xóa hợp đồng ?", "Confirm", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    string sql = $"DELETE FROM contracts WHERE contract_id={id}";
+
+                    if (db.ExecuteNonQuery(sql))
+                        LoadContracts();
+                }
+            }
+
+            if (column == "btnEdit")
+            {
+                string sql = $@"
+                UPDATE contracts
+                SET contract_title=N'{textBoxTHD.Text}'
+                WHERE contract_id={id}";
+
+                if (db.ExecuteNonQuery(sql))
+                {
+                    MessageBox.Show("Cập nhật thành công");
+                    LoadContracts();
+                }
+            }
+        }
+
+        // ================= OPEN FILE =================
+
+        private void DataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            if (dataGridView2.Columns[e.ColumnIndex].Name == "btnOpen")
+            {
+                string path = dataGridView2.Rows[e.RowIndex].Cells["DuongDan"].Value?.ToString();
+
+                if (!string.IsNullOrEmpty(path))
+                    System.Diagnostics.Process.Start(path);
+            }
+        }
+
+        // ================= SEARCH =================
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string keyword = textBox1.Text.Trim();
+
+            if (keyword == "")
+            {
+                LoadContracts();
+                return;
+            }
+
+            string sql = $@"
+            SELECT 
+                c.contract_id AS MaHopDong,
+                c.contract_title AS TenHopDong,
+                cl.full_name AS TenKhachHang,
+                l.full_name AS TenLuatSu
+            FROM contracts c
+            LEFT JOIN clients cl ON c.client_id = cl.client_id
+            LEFT JOIN lawyers l ON c.lawyer_id = l.lawyer_id
+            WHERE c.contract_title LIKE N'%{keyword}%'";
+
+            dataGridView1.Columns.Clear();
+            dataGridView1.DataSource = db.GetDataTable(sql);
+
+            AddActionButtons();
+        }
+
+        // ================= BUTTON COLUMN =================
+
+        private void AddActionButtons()
+        {
+            if (!dataGridView1.Columns.Contains("btnEdit"))
+            {
+                dataGridView1.Columns.Add(new DataGridViewButtonColumn
+                {
+                    Name = "btnEdit",
+                    HeaderText = "Sửa",
+                    Text = "Sửa",
+                    UseColumnTextForButtonValue = true
+                });
+            }
+
+            if (!dataGridView1.Columns.Contains("btnDelete"))
+            {
+                dataGridView1.Columns.Add(new DataGridViewButtonColumn
+                {
+                    Name = "btnDelete",
+                    HeaderText = "Xóa",
+                    Text = "Xóa",
+                    UseColumnTextForButtonValue = true
+                });
+            }
+        }
+
+        // ================= DESIGN =================
+
+        private void ApplyDesign(DataGridView dgv)
+        {
+            Color darkBlue = Color.FromArgb(33, 52, 72);
+            Color lightBlue = Color.FromArgb(148, 180, 193);
+
+            dgv.BackgroundColor = Color.White;
+            dgv.BorderStyle = BorderStyle.None;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.RowHeadersVisible = false;
+
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = darkBlue;
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+
+            dgv.DefaultCellStyle.SelectionBackColor = lightBlue;
+            dgv.DefaultCellStyle.SelectionForeColor = darkBlue;
+
+            dgv.RowTemplate.Height = 30;
+        }
+    }
+}

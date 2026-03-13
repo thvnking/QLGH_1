@@ -96,6 +96,7 @@
             buttonLH.TabIndex = 9;
             buttonLH.Text = "Lịch Hẹn";
             buttonLH.UseVisualStyleBackColor = false;
+            buttonLH.Click += buttonLH_Click;
             // 
             // buttonLS
             // 

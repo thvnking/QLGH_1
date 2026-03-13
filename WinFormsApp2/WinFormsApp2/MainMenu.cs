@@ -38,7 +38,7 @@ namespace WinFormsApp2
         }
         private void buttonHS_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
+            DataView frm = new DataView();
             openChildForm(frm);
             frm.LoadData("SELECT * FROM contracts");
         }
@@ -60,15 +60,16 @@ namespace WinFormsApp2
             login.Show();
             this.Close();
         }
-        private void buttonPG_Click(object sender, EventArgs e)
+        private void buttonTK_Click(object sender, EventArgs e)
         {
             Form1 frm = new Form1();
             openChildForm(frm);
-            frm.LoadData("SELECT * FROM ChiTietHang");
+            frm.LoadData("SELECT * FROM users");
         }
-        private void buttonTK_Click(object sender, EventArgs e)
+
+        private void buttonLH_Click(object sender, EventArgs e)
         {
-            DataView frm = new DataView();
+            Calender frm = new Calender();
             openChildForm(frm);
             frm.LoadData("SELECT * FROM users");
         }

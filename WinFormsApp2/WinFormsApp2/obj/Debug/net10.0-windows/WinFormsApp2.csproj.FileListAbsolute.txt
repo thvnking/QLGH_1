@@ -454,3 +454,7 @@ D:\github\QLGH_1\WinFormsApp2\WinFormsApp2\obj\Debug\net10.0-windows\WinFormsApp
 D:\github\QLGH_1\WinFormsApp2\WinFormsApp2\obj\Debug\net10.0-windows\WinFormsApp2.genruntimeconfig.cache
 D:\github\QLGH_1\WinFormsApp2\WinFormsApp2\obj\Debug\net10.0-windows\ref\WinFormsApp2.dll
 D:\github\QLGH_1\WinFormsApp2\WinFormsApp2\obj\Debug\net10.0-windows\WinFormsApp2.DataView.resources
+D:\github\QLGH_1\WinFormsApp2\WinFormsApp2\bin\Debug\net10.0-windows\GumroadLicensing.dll
+D:\github\QLGH_1\WinFormsApp2\WinFormsApp2\bin\Debug\net10.0-windows\Hourglass.dll
+D:\github\QLGH_1\WinFormsApp2\WinFormsApp2\bin\Debug\net10.0-windows\Newtonsoft.Json.dll
+D:\github\QLGH_1\WinFormsApp2\WinFormsApp2\obj\Debug\net10.0-windows\WinFormsApp2.Calender.resources

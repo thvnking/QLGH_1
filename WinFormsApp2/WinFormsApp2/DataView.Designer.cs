@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel4 = new Panel();
             panel5 = new Panel();
-            dataGridView1 = new DataGridView();
+            dataGridView2 = new DataGridView();
             panel2 = new Panel();
             textBoxTLS = new TextBox();
             textBoxTKH = new TextBox();
@@ -46,17 +45,17 @@
             labelMHD = new Label();
             BtnThem = new Button();
             panel3 = new Panel();
-            dataGridView2 = new DataGridView();
+            dataGridView1 = new DataGridView();
             panel1 = new Panel();
             btnTim = new Button();
             lblList = new Label();
             textBox1 = new TextBox();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,10 +64,10 @@
             panel4.BackColor = Color.FromArgb(29, 60, 107);
             panel4.Controls.Add(panel5);
             panel4.Controls.Add(panel2);
-            panel4.Dock = DockStyle.Fill;
+            panel4.Dock = DockStyle.Right;
             panel4.Location = new Point(744, 100);
             panel4.Name = "panel4";
-            panel4.Size = new Size(366, 606);
+            panel4.Size = new Size(451, 500);
             panel4.TabIndex = 10;
             // 
             // panel5
@@ -78,26 +77,39 @@
             panel5.Location = new Point(0, 169);
             panel5.Name = "panel5";
             panel5.Padding = new Padding(30);
-            panel5.Size = new Size(366, 437);
+            panel5.Size = new Size(451, 331);
             panel5.TabIndex = 10;
             // 
-            // dataGridView1
+            // dataGridView2
             // 
-            dataGridView1.BackgroundColor = Color.FromArgb(234, 224, 207);
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = SystemColors.Window;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle5.ForeColor = SystemColors.AppWorkspace;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
-            dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(30, 30);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(684, 546);
-            dataGridView1.TabIndex = 0;
+            dataGridViewCellStyle1.BackColor = SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.ForeColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.Aquamarine;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.ActiveCaptionText;
+            dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView2.BackgroundColor = SystemColors.ActiveBorder;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(33, 52, 72);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(148, 180, 193);
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(148, 180, 193);
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = SystemColors.AppWorkspace;
+            dataGridViewCellStyle3.SelectionBackColor = Color.Aquamarine;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataGridView2.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridView2.Dock = DockStyle.Fill;
+            dataGridView2.Location = new Point(30, 30);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(391, 271);
+            dataGridView2.TabIndex = 0;
             // 
             // panel2
             // 
@@ -113,7 +125,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(366, 169);
+            panel2.Size = new Size(451, 169);
             panel2.TabIndex = 9;
             // 
             // textBoxTLS
@@ -122,9 +134,9 @@
             textBoxTLS.BorderStyle = BorderStyle.None;
             textBoxTLS.Font = new Font("Times New Roman", 12F);
             textBoxTLS.ForeColor = Color.FromArgb(177, 148, 95);
-            textBoxTLS.Location = new Point(153, 124);
+            textBoxTLS.Location = new Point(172, 124);
             textBoxTLS.Name = "textBoxTLS";
-            textBoxTLS.Size = new Size(207, 19);
+            textBoxTLS.Size = new Size(246, 19);
             textBoxTLS.TabIndex = 16;
             // 
             // textBoxTKH
@@ -133,9 +145,9 @@
             textBoxTKH.BorderStyle = BorderStyle.None;
             textBoxTKH.Font = new Font("Times New Roman", 12F);
             textBoxTKH.ForeColor = Color.FromArgb(177, 148, 95);
-            textBoxTKH.Location = new Point(153, 92);
+            textBoxTKH.Location = new Point(172, 92);
             textBoxTKH.Name = "textBoxTKH";
-            textBoxTKH.Size = new Size(207, 19);
+            textBoxTKH.Size = new Size(246, 19);
             textBoxTKH.TabIndex = 15;
             // 
             // textBoxTHD
@@ -144,9 +156,9 @@
             textBoxTHD.BorderStyle = BorderStyle.None;
             textBoxTHD.Font = new Font("Times New Roman", 12F);
             textBoxTHD.ForeColor = Color.FromArgb(177, 148, 95);
-            textBoxTHD.Location = new Point(153, 60);
+            textBoxTHD.Location = new Point(172, 60);
             textBoxTHD.Name = "textBoxTHD";
-            textBoxTHD.Size = new Size(207, 19);
+            textBoxTHD.Size = new Size(246, 19);
             textBoxTHD.TabIndex = 14;
             // 
             // textBoxMHD
@@ -155,9 +167,9 @@
             textBoxMHD.BorderStyle = BorderStyle.None;
             textBoxMHD.Font = new Font("Times New Roman", 12F);
             textBoxMHD.ForeColor = Color.FromArgb(177, 148, 95);
-            textBoxMHD.Location = new Point(153, 28);
+            textBoxMHD.Location = new Point(172, 28);
             textBoxMHD.Name = "textBoxMHD";
-            textBoxMHD.Size = new Size(85, 19);
+            textBoxMHD.Size = new Size(124, 19);
             textBoxMHD.TabIndex = 13;
             // 
             // labelTLS
@@ -165,7 +177,7 @@
             labelTLS.AutoSize = true;
             labelTLS.Font = new Font("Times New Roman", 14.25F);
             labelTLS.ForeColor = Color.FromArgb(177, 148, 95);
-            labelTLS.Location = new Point(6, 126);
+            labelTLS.Location = new Point(28, 124);
             labelTLS.Name = "labelTLS";
             labelTLS.Size = new Size(103, 21);
             labelTLS.TabIndex = 12;
@@ -176,7 +188,7 @@
             labelTKH.AutoSize = true;
             labelTKH.Font = new Font("Times New Roman", 14.25F);
             labelTKH.ForeColor = Color.FromArgb(177, 148, 95);
-            labelTKH.Location = new Point(6, 94);
+            labelTKH.Location = new Point(28, 92);
             labelTKH.Name = "labelTKH";
             labelTKH.Size = new Size(136, 21);
             labelTKH.TabIndex = 11;
@@ -187,7 +199,7 @@
             labelTHD.AutoSize = true;
             labelTHD.Font = new Font("Times New Roman", 14.25F);
             labelTHD.ForeColor = Color.FromArgb(177, 148, 95);
-            labelTHD.Location = new Point(6, 62);
+            labelTHD.Location = new Point(28, 60);
             labelTHD.Name = "labelTHD";
             labelTHD.Size = new Size(124, 21);
             labelTHD.TabIndex = 10;
@@ -198,7 +210,7 @@
             labelMHD.AutoSize = true;
             labelMHD.Font = new Font("Times New Roman", 14.25F);
             labelMHD.ForeColor = Color.FromArgb(177, 148, 95);
-            labelMHD.Location = new Point(6, 30);
+            labelMHD.Location = new Point(28, 28);
             labelMHD.Name = "labelMHD";
             labelMHD.Size = new Size(119, 21);
             labelMHD.TabIndex = 9;
@@ -211,7 +223,7 @@
             BtnThem.FlatStyle = FlatStyle.Flat;
             BtnThem.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnThem.ForeColor = Color.FromArgb(177, 148, 95);
-            BtnThem.Location = new Point(246, 25);
+            BtnThem.Location = new Point(331, 18);
             BtnThem.Margin = new Padding(5);
             BtnThem.Name = "BtnThem";
             BtnThem.Size = new Size(90, 29);
@@ -224,44 +236,22 @@
             // 
             panel3.BackColor = Color.FromArgb(29, 60, 107);
             panel3.Controls.Add(dataGridView1);
-            panel3.Dock = DockStyle.Left;
+            panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(0, 100);
             panel3.Name = "panel3";
             panel3.Padding = new Padding(30);
-            panel3.Size = new Size(744, 606);
+            panel3.Size = new Size(744, 500);
             panel3.TabIndex = 11;
             // 
-            // dataGridView2
+            // dataGridView1
             // 
-            dataGridViewCellStyle6.BackColor = SystemColors.ActiveCaption;
-            dataGridViewCellStyle6.ForeColor = SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle6.SelectionBackColor = Color.Aquamarine;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.ActiveCaptionText;
-            dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            dataGridView2.BackgroundColor = SystemColors.ActiveBorder;
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = Color.FromArgb(33, 52, 72);
-            dataGridViewCellStyle7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle7.ForeColor = Color.FromArgb(148, 180, 193);
-            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(148, 180, 193);
-            dataGridViewCellStyle7.SelectionForeColor = SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
-            dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = SystemColors.ActiveCaption;
-            dataGridViewCellStyle8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle8.ForeColor = SystemColors.AppWorkspace;
-            dataGridViewCellStyle8.SelectionBackColor = Color.Aquamarine;
-            dataGridViewCellStyle8.SelectionForeColor = SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
-            dataGridView2.DefaultCellStyle = dataGridViewCellStyle8;
-            dataGridView2.Dock = DockStyle.Fill;
-            dataGridView2.Location = new Point(30, 30);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(306, 377);
-            dataGridView2.TabIndex = 0;
-            dataGridView2.CellContentClick += dataGridView2_CellContentClick_1;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(30, 30);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(684, 440);
+            dataGridView1.TabIndex = 0;
+            dataGridView1.SelectionChanged += DataGridView1_SelectionChanged;
             // 
             // panel1
             // 
@@ -272,7 +262,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1110, 100);
+            panel1.Size = new Size(1195, 100);
             panel1.TabIndex = 12;
             // 
             // btnTim
@@ -282,30 +272,32 @@
             btnTim.FlatStyle = FlatStyle.Flat;
             btnTim.Font = new Font("Times New Roman", 14.25F);
             btnTim.ForeColor = Color.FromArgb(177, 148, 95);
-            btnTim.Location = new Point(990, 9);
+            btnTim.Location = new Point(1075, 9);
             btnTim.Margin = new Padding(0);
             btnTim.Name = "btnTim";
             btnTim.Size = new Size(90, 29);
             btnTim.TabIndex = 6;
             btnTim.Text = "Tìm";
             btnTim.UseVisualStyleBackColor = false;
+            btnTim.Click += btnTim_Click;
             // 
             // lblList
             // 
-            lblList.AutoSize = true;
+            lblList.Dock = DockStyle.Left;
             lblList.Font = new Font("Times New Roman", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblList.ForeColor = Color.FromArgb(177, 148, 95);
-            lblList.Location = new Point(0, 9);
+            lblList.Location = new Point(0, 0);
             lblList.Name = "lblList";
-            lblList.Size = new Size(295, 73);
+            lblList.Size = new Size(295, 100);
             lblList.TabIndex = 0;
             lblList.Text = "Order List";
+            lblList.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBox1.Font = new Font("Times New Roman", 14.25F);
-            textBox1.Location = new Point(785, 9);
+            textBox1.Location = new Point(870, 9);
             textBox1.Margin = new Padding(0);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(205, 29);
@@ -315,20 +307,20 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1110, 706);
-            Controls.Add(panel4);
+            ClientSize = new Size(1195, 600);
             Controls.Add(panel3);
+            Controls.Add(panel4);
             Controls.Add(panel1);
             Name = "DataView";
             Text = "DataView";
             Load += DataView_Load;
             panel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -337,7 +329,6 @@
         #endregion
 
         private Panel panel4;
-        private DataGridView dataGridView1;
         private Panel panel3;
         private DataGridView dataGridView2;
         private Panel panel1;
@@ -355,5 +346,6 @@
         private TextBox textBoxTLS;
         private TextBox textBoxTKH;
         private TextBox textBoxTHD;
+        private DataGridView dataGridView1;
     }
 }
