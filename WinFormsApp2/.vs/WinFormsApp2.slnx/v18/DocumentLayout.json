@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "D:\\github\\QLGH_1\\WinFormsApp2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\github\\qlgh_1\\winformsapp2\\winformsapp2\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\github\\qlgh_1\\winformsapp2\\winformsapp2\\data.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\data.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\github\\qlgh_1\\winformsapp2\\winformsapp2\\dataview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\dataview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\github\\qlgh_1\\winformsapp2\\winformsapp2\\calender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\calender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\github\\qlgh_1\\winformsapp2\\winformsapp2\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\github\\qlgh_1\\winformsapp2\\winformsapp2\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\github\\qlgh_1\\winformsapp2\\winformsapp2\\calender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\calender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\github\\qlgh_1\\winformsapp2\\winformsapp2\\calender.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\calender.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|d:\\github\\qlgh_1\\winformsapp2\\winformsapp2\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5D3017-9F03-EC78-92D1-31A48FEDCC15}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,83 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Data.cs",
+              "DocumentIndex": 1,
+              "Title": "Data.cs [Design]",
               "DocumentMoniker": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Data.cs",
               "RelativeDocumentMoniker": "WinFormsApp2\\Data.cs",
-              "ToolTip": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Data.cs",
-              "RelativeToolTip": "WinFormsApp2\\Data.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwD8AAAAYAAAAAAAAAA==",
+              "ToolTip": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Data.cs [Design]",
+              "RelativeToolTip": "WinFormsApp2\\Data.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:08:51.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T16:19:53.768Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataView.cs",
-              "DocumentMoniker": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\DataView.cs",
-              "RelativeDocumentMoniker": "WinFormsApp2\\DataView.cs",
-              "ToolTip": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\DataView.cs",
-              "RelativeToolTip": "WinFormsApp2\\DataView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Data.Designer.cs",
+              "DocumentMoniker": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Data.Designer.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\Data.Designer.cs",
+              "ToolTip": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Data.Designer.cs",
+              "RelativeToolTip": "WinFormsApp2\\Data.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:08:43.269Z",
+              "WhenOpened": "2026-03-13T16:19:35.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\MainMenu.cs",
-              "RelativeDocumentMoniker": "WinFormsApp2\\MainMenu.cs",
-              "ToolTip": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\MainMenu.cs",
-              "RelativeToolTip": "WinFormsApp2\\MainMenu.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAA1wCoAAAAXAAAAAAAAAA==",
+              "Title": "Data.cs",
+              "DocumentMoniker": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Data.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\Data.cs",
+              "ToolTip": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Data.cs",
+              "RelativeToolTip": "WinFormsApp2\\Data.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:07:43.145Z",
+              "WhenOpened": "2026-03-13T15:45:00.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Calender.cs [Design]",
-              "DocumentMoniker": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Calender.cs",
-              "RelativeDocumentMoniker": "WinFormsApp2\\Calender.cs",
-              "ToolTip": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Calender.cs [Design]",
-              "RelativeToolTip": "WinFormsApp2\\Calender.cs [Design]",
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\MainMenu.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\MainMenu.cs",
+              "ToolTip": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\MainMenu.cs",
+              "RelativeToolTip": "WinFormsApp2\\MainMenu.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwDAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:02:27.277Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Calender.Designer.cs",
-              "DocumentMoniker": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Calender.Designer.cs",
-              "RelativeDocumentMoniker": "WinFormsApp2\\Calender.Designer.cs",
-              "ToolTip": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Calender.Designer.cs",
-              "RelativeToolTip": "WinFormsApp2\\Calender.Designer.cs",
-              "ViewState": "AgIAADABAAAAAAAAAAAIwCABAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T14:55:29.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Calender.cs",
-              "DocumentMoniker": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Calender.cs",
-              "RelativeDocumentMoniker": "WinFormsApp2\\Calender.cs",
-              "ToolTip": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\Calender.cs",
-              "RelativeToolTip": "WinFormsApp2\\Calender.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAmwCcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T14:36:40.806Z",
+              "WhenOpened": "2026-03-13T15:42:09.567Z",
               "EditorCaption": ""
             }
           ]

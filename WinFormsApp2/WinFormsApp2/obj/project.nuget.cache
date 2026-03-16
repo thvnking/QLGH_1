@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cBf7NJXphyA=",
+  "dgSpecHash": "VUnlPrqs7sc=",
   "success": true,
   "projectFilePath": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
   "expectedPackageFiles": [
@@ -48,7 +48,7 @@
       "filePath": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
       "libraryId": "Microsoft.SqlServer.Types",
       "targetGraphs": [
-        "net10.0-windows"
+        "net10.0-windows7.0"
       ]
     },
     {
@@ -60,7 +60,7 @@
       "filePath": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
       "libraryId": "GumroadLicensing",
       "targetGraphs": [
-        "net10.0-windows"
+        "net10.0-windows7.0"
       ]
     },
     {
@@ -72,7 +72,7 @@
       "filePath": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
       "libraryId": "Hourglass",
       "targetGraphs": [
-        "net10.0-windows"
+        "net10.0-windows7.0"
       ]
     },
     {
@@ -84,7 +84,7 @@
       "filePath": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
       "libraryId": "Microsoft.ReportingServices.ReportViewerControl.WebForms",
       "targetGraphs": [
-        "net10.0-windows"
+        "net10.0-windows7.0"
       ]
     },
     {
@@ -96,7 +96,7 @@
       "filePath": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
       "libraryId": "Microsoft.ReportingServices.ReportViewerControl.Winforms",
       "targetGraphs": [
-        "net10.0-windows"
+        "net10.0-windows7.0"
       ]
     },
     {
@@ -108,7 +108,7 @@
       "filePath": "D:\\github\\QLGH_1\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
       "libraryId": "Microsoft.SqlServer.Types",
       "targetGraphs": [
-        "net10.0-windows"
+        "net10.0-windows7.0"
       ]
     }
   ]

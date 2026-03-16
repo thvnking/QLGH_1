@@ -12,6 +12,14 @@ namespace WinFormsApp2
 
         private void openChildForm(Form childForm)
         {
+            if (activeForm != null && activeForm.GetType() == childForm.GetType())
+            {
+                return;
+            }
+
+            if (activeForm != null)
+                activeForm.Close();
+
             if (activeForm != null)
                 activeForm.Close();
             activeForm = childForm;
@@ -69,9 +77,16 @@ namespace WinFormsApp2
 
         private void buttonLH_Click(object sender, EventArgs e)
         {
-            Calender frm = new Calender();
-            openChildForm(frm);
-            frm.LoadData("SELECT * FROM users");
+            try
+            {
+                Calender frm = new Calender();
+                openChildForm(frm);
+                frm.LoadData("SELECT * FROM appointments");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi mở form Lịch Hẹn: " + ex.Message);
+            }
         }
     }
 }
